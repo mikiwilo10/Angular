@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ExamenRecuperacion';
+
+  templateMenu: any[] = [
+    {
+      texto: 'Crear Ticket',
+      ruta: '/ticket'
+    },
+    {
+      texto: 'listar Ticket',
+      ruta: '/listarTicket'
+    },
+   
+  ];
 }
+

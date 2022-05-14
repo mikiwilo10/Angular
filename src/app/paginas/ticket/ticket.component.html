@@ -1,0 +1,63 @@
+<div class="container col-6">
+    <form [formGroup]="ticketFormulario">
+    
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" 
+            placeholder="Numero" 
+            formControlName='numero'
+            aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" 
+            formControlName='ingreso'
+            placeholder="Fecha y Hora Ingreso" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text"
+            formControlName='salida'
+             class="form-control" placeholder="Fecha y Hora Salida" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <label for="">Vehiculo</label>
+          <!-- Vehiculo -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" 
+            formControlName='placa' placeholder="Vehiculo Placa" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" 
+            formControlName='marca' placeholder="Vehiculo Modelo" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" 
+            formControlName='modelo' placeholder="Vehiculo Marca" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <!-- Cliente -->
+          <label for="">Cliente</label>
+          <div class="input-group mb-3">
+            <input type="text"
+            formControlName='cedula'
+            class="form-control" placeholder="Cliente Cedula" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text"
+            formControlName='nombres'
+            class="form-control" placeholder="Cliente Nombre" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text"
+            formControlName='telefono'
+            class="form-control" placeholder="Cliente Telefono" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text"
+            formControlName='direccion'
+            class="form-control" placeholder="Cliente Direccion"  aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+        <button type="submit" (click)="Guardar()" class="btn btn-primary">Submit</button>
+    
+    </form>
+</div>
